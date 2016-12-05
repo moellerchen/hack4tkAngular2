@@ -1,0 +1,19 @@
+<nav *ngIf="isAuth()" class="navbar navbar-default" style="margin-bottom: 0!important; color: lightskyblue !important;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li (click)="onLogout()"><a style="cursor: pointer" >Logout</a></li>
+          <li routerLinkActive="active"><a routerLink="/appointment">Termine</a></li>
+          <li routerLinkActive="active"><a routerLink="/my-termine" >Termine verwalten</a></li>
+          <li routerLinkActive="active"><a routerLink="/create-termin">Termin erstellen</a></li>
+          <li routerLinkActive="active"><a routerLink="/overview">Übersicht</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <router-outlet>
+  </router-outlet>
+
+

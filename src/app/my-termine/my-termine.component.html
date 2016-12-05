@@ -1,0 +1,22 @@
+
+<table *ngIf="showTable" class="table table-hover table-striped" style="text-align: left !important;">
+  <thead>
+  <tr>
+    <th>Anlass</th>
+    <th>Datum</th>
+    <th>Uhrzeit</th>
+    <th>Treffpunkt</th>
+    <th>Kleidung</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let termin of getTermineOfCurrentUser()">
+    <td>{{termin.anlass}}</td>
+    <td>{{termin.datum.substr(0, 10)}}</td>
+    <td>{{termin.uhrzeit}}</td>
+    <td>{{termin.ort_treffen}}</td>
+    <td>{{termin.kleidung}}</td>
+  </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,22 @@
+
+<table *ngIf="showTableOverview" class="table table-hover table-striped" style="text-align: left !important;">
+  <thead>
+  <tr>
+    <th>Termin</th>
+    <th>Datum</th>
+    <th>User zugesagt</th>
+    <th>User abgesagt</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let teilnahme of displayTermine()">
+    <td>{{teilnahme.termin}}</td>
+    <td>{{teilnahme.datum}}</td>
+    <td>{{teilnahme.userZu}}</td>
+    <td>{{teilnahme.userAb}}</td>
+  </tr>
+  </tbody>
+</table>
+
+
+

@@ -1,0 +1,18 @@
+#user{
+  display: flex;
+  flex-wrap: wrap;
+  width: 25% !important;
+}
+
+#pw{
+  display: flex;
+  flex-wrap: wrap;
+  width: 25% !important;
+}
+
+#loginButton{
+  width: 20% !important;
+  text-align: center;
+  line-height: 15px;
+}
+
