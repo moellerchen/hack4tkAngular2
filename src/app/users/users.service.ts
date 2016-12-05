@@ -17,10 +17,13 @@ export class UsersService {
     });
   }
 
+
+    /*
   getUsers() {
     this.fetchData();
     return this.users;
   }
+
 
   fetchData() {
     console.log("fetchData");
@@ -37,4 +40,5 @@ export class UsersService {
   getData() {
     return this.http.get('http://localhost:3000/users').map((test: Response) => test.json());
   }
+  */
 }

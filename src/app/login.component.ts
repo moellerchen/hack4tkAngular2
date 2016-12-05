@@ -24,7 +24,9 @@ export class LoginComponent implements OnInit {
   subtitle = 'Terminmanager';
 
   ngOnInit() {
+      /*
     this.usersService.getUsers();
+    */
     this.myForm = this.fb.group({
       user: ['', Validators.required],
       password: ['', Validators.required]
