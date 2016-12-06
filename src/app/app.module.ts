@@ -21,7 +21,7 @@ import {TilesModalComponent} from "./tiles/tiles-modal.component";
     AppComponent,
     LoginComponent,
       OverviewComponent,
-      TrafficJamComponent
+      TrafficJamComponent,
       OverviewComponent,
       TilesComponent,
       TileComponent,
