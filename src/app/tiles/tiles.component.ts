@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate } from '@angular/core';
 import { TileComponent} from './tile.component';
 import {Tile, TILES} from './tile';
 import {$} from "protractor";
+import {UsersService} from "../users/users.service";
+import {User} from "../users/user";
+import {Headers, RequestOptions, Response, Http} from "@angular/http";
 
 @Component({
     selector: 'tiles',
@@ -9,8 +12,13 @@ import {$} from "protractor";
 })
 export class TilesComponent {
     tiles: TileComponent[] = [];
+    userData: User;
     millisecondsToWait = 20;
     temp: string;
+
+    constructor(usersService: UsersService, private http: Http){
+      this.userData = usersService.getLoggedInUser();
+    }
 
     addTile(tile: TileComponent) {
 /*
@@ -45,6 +53,7 @@ export class TilesComponent {
       this.temp = tile.tileName;
 
     }
+
 
 
 }

@@ -9,7 +9,8 @@
     "user_registered": "2014-10-24T08:01:35.000Z",
     "user_activation_key": "",
     "user_status": 0,
-    "display_name": "Max Mustermann"
+    "display_name": "Max Mustermann",
+    "activeFields": [""]
   },
   {
     "ID": 7,
@@ -21,6 +22,7 @@
     "user_registered": "2014-11-14T16:32:37.000Z",
     "user_activation_key": "",
     "user_status": 0,
-    "display_name": "Lara Meier"
+    "display_name": "Lara Meier",
+    "activeFields": []
   }
 ]
