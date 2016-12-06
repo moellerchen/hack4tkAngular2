@@ -43,9 +43,7 @@ my-footer{
 }
 
 
-.img-header{
-  margin-top: -28px;
-}
+
 
 #nav {
   margin: 0 auto;
@@ -54,8 +52,11 @@ my-footer{
   width: 50%;
 }
 
-.navbar-nav li a:before{
-  float: right;
+#links{
+  float: left;
+  margin: 0;
+  margin-left: 300px;
+  word-spacing: 31px;
 }
 
 
@@ -108,6 +109,7 @@ footer{
   color: white;
   padding: 46px 70px;
   width: 100%;
+  margin-top: 261px;
 }
 
 

@@ -2,14 +2,18 @@
   <div class="container-fluid" id="start">
     <div class="navbar-header">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <my-head></my-head>
-        <ul class="nav navbar-nav">
-          <li (click)="onLogout()"><a style="cursor: pointer" >Logout</a></li>
-          <a routerLink="news" routerLinkActive="active">News</a>
+        <ul class="nav navbar-nav" id="links">
+          <a routerLink="/" routerLinkActive="active">Hilfe</a>
+          <a routerLink="/" routerLinkActive="active">Einstellungen</a>
+          <a routerLink="/" routerLinkActive="active">Administration</a>
         </ul>
+        <my-head></my-head>
       </div>
     </div>
   </div>
+  <ul class="nav navbar-nav">
+    <li (click)="onLogout()"><a style="cursor: pointer" >Logout</a></li>
+  </ul>
 </nav>
   <router-outlet>
   </router-outlet>
