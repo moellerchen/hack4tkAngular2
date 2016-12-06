@@ -1,0 +1,23 @@
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#tilesModal">
+    Edit Tiles
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="tilesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="tilesModalLabel">Edit Tiles</h4>
+            </div>
+            <div class="modal-body">
+                <div *ngFor="let tile of tiles">
+                    <input type="checkbox" [(ngModel)]="tile.shown">{{tile.tileName}}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

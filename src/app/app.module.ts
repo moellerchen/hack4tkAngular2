@@ -10,13 +10,19 @@ import {UsersService} from "./users/users.service";
 import {AuthService} from "./auth.service";
 import {AuthGuard} from "./auth.guard";
 import { OverviewComponent } from './overview/overview.component';
+import { TilesComponent } from './tiles/tiles.component';
+import { TileComponent } from './tiles/tile.component';
+import {TilesModalComponent} from "./tiles/tiles-modal.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-      OverviewComponent
+      OverviewComponent,
+      TilesComponent,
+      TileComponent,
+      TilesModalComponent
   ],
   imports: [
     BrowserModule,
