@@ -1,3 +1,5 @@
+import {TilesModalComponent} from './tiles-modal.component';
+
 export class Tile {
     name: string;
     template: string;
@@ -7,7 +9,7 @@ export class Tile {
 export const TILES: Tile[] = [
     {
         name: "News",
-        template: '<h1>Hier könnten Ihre News stehen!</h1>',
+        template: '<news [short]="true"></news>',
         shown: false
     },
     {

@@ -1,0 +1,11 @@
+<div *ngFor="let info of news" class="container">
+    <h1>{{info.title}}</h1>
+    <h3>{{info.subtitle}}</h3>
+    <p>{{info.text}}</p>
+    <span *ngFor="let author of info.authors">
+        <p>{{author}}</p>
+    </span>
+    <span *ngFor="let category of info.categories">
+        <p>{{category}}</p>
+    </span>
+</div>

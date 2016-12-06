@@ -2,7 +2,7 @@
 <div class="row">
     <tiles>
         <div *ngFor="let tile of tiles">
-            <tile [shown]="tile.shown" [tileName]="tile.name">{{tile.template}}</tile>
+            <tile [shown]="tile.shown" [tileName]="tile.name">{{tile.template | toHtml}}</tile>
         </div>
         <div>
             <ng-content></ng-content>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {AuthService} from "./auth.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NewsComponent} from "./news/news.component";
 
 @Component({
   selector: 'app-root',

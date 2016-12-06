@@ -1,5 +1,7 @@
 import {Component, Input } from '@angular/core';
 import {TilesComponent} from "./tiles.component";
+import {TilesModalComponent} from './tiles-modal.component';
+import { NewsComponent } from '../news/news.component';
 
 @Component({
     selector: 'tile',

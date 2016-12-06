@@ -14,6 +14,9 @@ import { TrafficJamComponent } from './traffic-jam/traffic-jam.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { TileComponent } from './tiles/tile.component';
 import {TilesModalComponent} from "./tiles/tiles-modal.component";
+import {NewsComponent} from "./news/news.component";
+import {ToHtmlPipe} from "./tiles/toHtml.pipe";
+import {NewsService} from "./news/news.service";
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import {TilesModalComponent} from "./tiles/tiles-modal.component";
       OverviewComponent,
       TilesComponent,
       TileComponent,
-      TilesModalComponent
+      TilesModalComponent,
+      NewsComponent,
+      ToHtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import {TilesModalComponent} from "./tiles/tiles-modal.component";
   providers: [
     UsersService,
     AuthService,
-    AuthGuard
+    AuthGuard,
+      NewsService
   ],
   bootstrap: [AppComponent]
 })
