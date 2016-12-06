@@ -12,15 +12,15 @@
         <input formControlName="user" class="form-control" type="text" id="user" placeholder="Username"
                class="center  ui-button ui-widget ui-corner-all ">
         <span
-          *ngIf="!myForm.controls['user'].pristine && myForm.controls['user'].errors != null" class="font">Ungültige E-Mail-Adresse</span>
+          *ngIf="!myForm.controls['user'].pristine && myForm.controls['user'].errors != null" class="font3">Invalid username</span>
         <br>
         <input formControlName="password" class="form-control" type="password" id="pw" placeholder="Password"
                class="center  ui-button ui-widget ui-corner-all">
-        <span *ngIf="!myForm.controls['password'].pristine && myForm.controls['password'].errors != null" class="font">Enter your password</span>
+        <span *ngIf="!myForm.controls['password'].pristine && myForm.controls['password'].errors != null" class="font3">Enter your password</span>
         <br><br>
         <button class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="loginButton">Log in</button>
         <br>
-        <span *ngIf="isLoginAndPasswordCorrect == false" class="font">Login/Password nicht korrekt</span>
+        <span *ngIf="isLoginAndPasswordCorrect == false" class="font3">Login/Password wrong</span>
       </form>
     </div>
   </div>

@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome!</h1>
+
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#tilesModal" style="position: absolute; margin-top: -48px !important; margin-left: 200px !important;" >
+    Edit Tiles
+  </button>
+
+    <tiles style="display: flex !important; flex-wrap: wrap !important;">
+
+      <div *ngFor="let tile of tiles">
+        <tile [shown]="tile.shown" [tileName]="tile.name"></tile>
+      </div>
+      <div>
+        <ng-content></ng-content>
+      </div>
+
+    </tiles>
+</div>

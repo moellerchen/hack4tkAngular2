@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TileComponent} from './tile.component';
-import { Tile } from './tile';
+import {Tile, TILES} from './tile';
+import {$} from "protractor";
 
 @Component({
     selector: 'tiles',
@@ -8,6 +9,7 @@ import { Tile } from './tile';
 })
 export class TilesComponent {
     tiles: TileComponent[] = [];
+    millisecondsToWait = 20;
 
     addTile(tile: TileComponent) {
 /*
@@ -23,9 +25,23 @@ export class TilesComponent {
     }
 
     selectTile(tile: TileComponent) {
+
+      if(document.getElementsByClassName("kachel kachel-active")[0]){
+        document.getElementsByClassName("kachel kachel-active")[0].innerHTML = tile.tileName;
+      }
+
         this.tiles.forEach((change) => {
             change.active = false;
+
         });
         tile.active = true;
+
+      setTimeout(function() {
+        console.log("expandTitle");
+        document.getElementsByClassName("kachel kachel-active")[0].innerHTML += "\n" + "content";
+      }, this.millisecondsToWait);
+
     }
+
+
 }
