@@ -1,5 +1,7 @@
 import {Component} from "@angular/core";
 import {RouterOutlet, Routes} from "@angular/router";
+import {UsersService} from "../users/users.service";
+import {User} from "../users/user";
 
 @Component({
   selector: 'my-head',
@@ -8,6 +10,18 @@ import {RouterOutlet, Routes} from "@angular/router";
 })
 export class HeaderComponent {
 
-title = 'Lara Buschmann'
+
+
+  constructor(private usersService: UsersService){
+  }
+
+  getTitle(){
+    let title = this.usersService.getLoggedInUser().display_name;
+    return title;
+  }
+
+
+
+
 
 }

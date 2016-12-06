@@ -24,7 +24,7 @@
 
 .center {
   margin: auto;
-  width: 50%;
+  width: 75%;
   padding: 10px;
   text-align: center;
   position: center;
@@ -57,13 +57,13 @@
 
   .font {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    color: black;
+    color: deepskyblue;
     font-size: 25px;
   }
 
   .font2 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    color: black;
+    color: deepskyblue;
     font-size: 20px;
   }
 
@@ -95,13 +95,13 @@
 
   .font {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    color: black;
+    color: deepskyblue;
     font-size: 20px;
   }
 
   .font2 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    color: black;
+    color: deepskyblue;
     font-size: 15px;
   }
 
@@ -109,14 +109,14 @@
 
 .font {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: black;
+  color: deepskyblue;
   font-size: 30px;
 }
 
 .font2 {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  color: black;
-  font-size: 25px;
+  color: deepskyblue;
+  font-size: 22px;
 }
 
 .font3 {

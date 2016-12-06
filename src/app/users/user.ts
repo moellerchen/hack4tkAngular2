@@ -7,7 +7,7 @@ export class User {
     public user_login: String,
     public user_nicename: String,
     public user_email: String,
-    public display_Name: String,
+    public display_name: String,
     public activeFields: string[]
   ) {}
 }
