@@ -47,7 +47,7 @@ export class TilesComponent {
 
       setTimeout(function() {
         console.log("expandTitle");
-        document.getElementsByClassName("kachel kachel-active")[0].innerHTML += "\n" + "content";
+        //document.getElementsByClassName("kachel kachel-active")[0].innerHTML += "\n" + "content";
       }, this.millisecondsToWait);
 
       this.temp = tile.tileName;

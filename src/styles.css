@@ -126,18 +126,19 @@
 }
 
 .kachel {
+  background: skyblue;
+  border-radius: 25px;
   height: 150px;
   width: 150px;
-  background-color: lightskyblue;
   opacity: 0.5;
-  color: black;
   border: 1px solid black;
   margin: 5px;
-  text-align: left;
-  padding-top: 0px;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  font-size: 24pt;
+  font-size: 15px;
+  font-style: normal;
+  padding-top: 63px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  color: black;
+  text-shadow: 0 0 2px #fff;
 }
 
 .kachel:hover {
@@ -148,6 +149,7 @@
 .kachel-active {
   opacity: 1;
 }
+
 
 
 

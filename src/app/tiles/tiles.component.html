@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-2">
-        <div class="kachel" *ngFor="let tile of tiles" (click)="selectTile(tile)" [ngClass]="{'kachel-active': tile.active}"
+        <div class="kachel btn btn-info" *ngFor="let tile of tiles" (click)="selectTile(tile)" [ngClass]="{'kachel-active': tile.active}"
              [hidden]="!tile.shown">
             {{tile.tileName}}
         </div>

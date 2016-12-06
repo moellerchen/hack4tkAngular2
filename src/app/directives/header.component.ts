@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {RouterOutlet, Routes} from "@angular/router";
+import {RouterOutlet, Routes, Router} from "@angular/router";
 import {UsersService} from "../users/users.service";
 import {User} from "../users/user";
 
@@ -10,14 +10,16 @@ import {User} from "../users/user";
 })
 export class HeaderComponent {
 
-
-
-  constructor(private usersService: UsersService){
+  constructor(private usersService: UsersService, private router: Router){
   }
 
   getTitle(){
     let title = this.usersService.getLoggedInUser().display_name;
     return title;
+  }
+
+  homeaufruf(){
+    this.router.navigate(['/']);
   }
 
 
