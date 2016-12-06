@@ -10,6 +10,7 @@ import {$} from "protractor";
 export class TilesComponent {
     tiles: TileComponent[] = [];
     millisecondsToWait = 20;
+    temp: string;
 
     addTile(tile: TileComponent) {
 /*
@@ -27,7 +28,7 @@ export class TilesComponent {
     selectTile(tile: TileComponent) {
 
       if(document.getElementsByClassName("kachel kachel-active")[0]){
-        document.getElementsByClassName("kachel kachel-active")[0].innerHTML = tile.tileName;
+        document.getElementsByClassName("kachel kachel-active")[0].innerHTML = this.temp;
       }
 
         this.tiles.forEach((change) => {
@@ -40,6 +41,8 @@ export class TilesComponent {
         console.log("expandTitle");
         document.getElementsByClassName("kachel kachel-active")[0].innerHTML += "\n" + "content";
       }, this.millisecondsToWait);
+
+      this.temp = tile.tileName;
 
     }
 
