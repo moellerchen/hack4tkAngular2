@@ -8,6 +8,8 @@ export class UsersService {
 
   private users: User[];
 
+  private loggedInUser: User;
+
   constructor(private http: Http) { }
 
 
@@ -17,7 +19,13 @@ export class UsersService {
     });
   }
 
+  setLoggedInUser(user: User) {
+      this.loggedInUser = user;
+  }
 
+  getLoggedInUser() {
+      return this.loggedInUser;
+  }
 
   getUsers() {
     this.fetchData();

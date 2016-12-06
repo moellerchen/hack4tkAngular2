@@ -12,6 +12,7 @@ import {NewsComponent} from "./news/news.component";
 import {TrafficJamComponent} from "./traffic-jam/traffic-jam.component";
 import {CreateBlogEntryComponent} from "./create-blog-entry/create-blog-entry.component";
 import {BlogComponent} from "./blog/blog.component";
+import {ProfileComponent} from "./profile/profile.component";
 
 
 const appRoutes: Routes = [
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
   { path: 'trafficJam', component: TrafficJamComponent },
   { path: '', component: OverviewComponent, pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
-    {path: 'news', component: NewsComponent }
+    {path: 'news', component: NewsComponent },
+    {path: 'profile', component: ProfileComponent}
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

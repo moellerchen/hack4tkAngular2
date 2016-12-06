@@ -9,11 +9,16 @@ import {News} from "./news";
 export class NewsComponent implements OnInit{
     constructor(private newsService: NewsService) {}
 
-    @Input() short: boolean = true;
-    @Input() filter: string[] = ['#theMTeam'];
+    @Input() short: boolean = false;
+    @Input() filter: string = '#theMTeam';
     news: News[];
+    oneFilter: string;
 
     ngOnInit() {
+        this.getNews();
+    }
+
+    getNews() {
         this.news = this.newsService.getFilteredNews(this.short, this.filter);
     }
 }

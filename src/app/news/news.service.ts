@@ -11,17 +11,15 @@ export class NewsService {
         return NEWS;
     }
 
-    getFilteredNews(short: boolean, filter: string[]) {
+    getFilteredNews(short: boolean, filter: string) {
         var allNews: News[] = this.getNews(false);
         var returnNews: News[] = [];
         for(var i = 0; i < allNews.length; i++) {
             for(var j = 0; j < allNews[i].categories.length; j++) {
-                for(var k = 0; k < filter.length; k++) {
-                    if(allNews[i].categories[j].toLowerCase() == filter[k].toLowerCase()) {
-                        returnNews.push(allNews[i]);
-                        j = allNews[i].categories.length;
-                        break;
-                    }
+                if(allNews[i].categories[j].toLowerCase() == filter.toLowerCase()) {
+                    returnNews.push(allNews[i]);
+                    j = allNews[i].categories.length;
+                    break;
                 }
             }
         }

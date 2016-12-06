@@ -7,7 +7,7 @@ import {UserForLogin} from "./user-for-login";
 
 @Injectable()
 export class AuthService {
-  public currentUser;
+  private currentUser;
 
   constructor(private router: Router, private usersService: UsersService) {
   }
@@ -18,6 +18,7 @@ export class AuthService {
 
     for (let user of this.usersService.getUsers()) {
       if (user.user_login === username) {
+        this.usersService.setLoggedInUser(user);
         this.currentUser = user;
         console.log(user);
         this.router.navigate(['/']);
