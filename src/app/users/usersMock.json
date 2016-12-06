@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1,
+    "user_login": "Max",
+    "user_pass": "$P$B.y5v.UMPuPnJ0HHRQUs6kfqdt133i0",
+    "user_nicename": "max",
+    "user_email": "max@max.de",
+    "user_url": "",
+    "user_registered": "2014-10-24T08:01:35.000Z",
+    "user_activation_key": "",
+    "user_status": 0,
+    "display_name": "Max Mustermann"
+  },
+  {
+    "ID": 7,
+    "user_login": "Lara",
+    "user_pass": "$P$BeVvSBCreCQbq6iXnDmI/Brp1iQljj/",
+    "user_nicename": "lara",
+    "user_email": "lara@web.de",
+    "user_url": "",
+    "user_registered": "2014-11-14T16:32:37.000Z",
+    "user_activation_key": "",
+    "user_status": 0,
+    "display_name": "Lara Meier"
+  }
+]

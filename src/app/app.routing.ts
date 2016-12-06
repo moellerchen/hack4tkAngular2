@@ -10,8 +10,8 @@ import {AuthGuard} from "./auth.guard";
 
 
 const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: '', component: OverviewComponent, pathMatch: 'full'}
+  { path: '', component: OverviewComponent, pathMatch: 'full'},
+  { path: 'login', component: LoginComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -20,13 +20,11 @@ export class LoginComponent implements OnInit {
               private authService: AuthService) {
   }
 
-  title = 'Tambourkorps Hamminkeln 1922 e.V.';
-  subtitle = 'Terminmanager';
+  title = 'thyssenkrupp Intranet';
+  subtitle = 'engineering. tomorrow. together.';
 
   ngOnInit() {
-      /*
     this.usersService.getUsers();
-    */
     this.myForm = this.fb.group({
       user: ['', Validators.required],
       password: ['', Validators.required]

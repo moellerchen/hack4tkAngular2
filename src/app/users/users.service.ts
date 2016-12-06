@@ -18,7 +18,7 @@ export class UsersService {
   }
 
 
-    /*
+
   getUsers() {
     this.fetchData();
     return this.users;
@@ -28,7 +28,7 @@ export class UsersService {
   fetchData() {
     console.log("fetchData");
 
-    return this.http.get('http://localhost:3000/users').map((test: Response) => test.json())
+    return this.http.get('/app/users/usersMock.json').map((test: Response) => test.json())
       .subscribe(
         (data: any[]) => {
           this.users = data;
@@ -38,7 +38,7 @@ export class UsersService {
   }
 
   getData() {
-    return this.http.get('http://localhost:3000/users').map((test: Response) => test.json());
+    return this.http.get('/app/users/usersMock.json').map((test: Response) => test.json());
   }
-  */
+
 }

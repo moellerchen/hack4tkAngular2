@@ -15,32 +15,26 @@ export class AuthService {
   login(userForLogin: UserForLogin): boolean {
     console.log("login");
     let username = userForLogin.user;
-    /*
+
     for (let user of this.usersService.getUsers()) {
       if (user.user_login === username) {
         this.currentUser = user;
         console.log(user);
-        this.router.navigate(['/appointment']);
+        this.router.navigate(['/']);
         return true;
       }
     }
     return false;
-    */
-      this.router.navigate(['/']);
-      return true;
+
   }
 
 
 
   isAuthenticated() {
-      /*
     if (this.currentUser && this.currentUser != null) {
       return true;
     }
     return false;
-    */
-
-      return true;
   }
 
   logout() {

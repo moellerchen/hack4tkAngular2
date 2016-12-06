@@ -1,25 +1,28 @@
-<div class="content">
-  <div class="center">
-    <h1 class="font" style="text-align: center">
-      {{title}}
-    </h1>
-    <h2 class="font" style="text-align: center">
-      {{subtitle}}
-    </h2>
-    <br>
-    <form [formGroup]="myForm" (ngSubmit)="onLogin()">
-      <input formControlName="user" class="form-control" type="text" id="user" placeholder="Username"
-             class="center  ui-button ui-widget ui-corner-all ">
-      <span
-        *ngIf="!myForm.controls['user'].pristine && myForm.controls['user'].errors != null" class="font">Ungültige E-Mail-Adresse</span>
+
+  <div class="content">
+    <div class="center">
+      <h1 class="font" style="text-align: center">
+        {{title}}
+      </h1>
+      <h2 class="font2" style="text-align: center">
+        {{subtitle}}
+      </h2>
       <br>
-      <input formControlName="password" class="form-control" type="password" id="pw" placeholder="Password"
-             class="center  ui-button ui-widget ui-corner-all">
-      <span *ngIf="!myForm.controls['password'].pristine && myForm.controls['password'].errors != null" class="font">Enter your password</span>
-      <br><br>
-      <button  class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="loginButton">Log in</button><br>
-      <span *ngIf="isLoginAndPasswordCorrect == false" class="font">Login/Password nicht korrekt</span>
-    </form>
+      <form [formGroup]="myForm" (ngSubmit)="onLogin()">
+        <input formControlName="user" class="form-control" type="text" id="user" placeholder="Username"
+               class="center  ui-button ui-widget ui-corner-all ">
+        <span
+          *ngIf="!myForm.controls['user'].pristine && myForm.controls['user'].errors != null" class="font">Ungültige E-Mail-Adresse</span>
+        <br>
+        <input formControlName="password" class="form-control" type="password" id="pw" placeholder="Password"
+               class="center  ui-button ui-widget ui-corner-all">
+        <span *ngIf="!myForm.controls['password'].pristine && myForm.controls['password'].errors != null" class="font">Enter your password</span>
+        <br><br>
+        <button class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="loginButton">Log in</button>
+        <br>
+        <span *ngIf="isLoginAndPasswordCorrect == false" class="font">Login/Password nicht korrekt</span>
+      </form>
+    </div>
   </div>
-</div>
+
 
