@@ -4,7 +4,8 @@ import { ToHtmlPipe } from '../tiles/toHtml.pipe';
 
 @Component({
     selector: 'overview',
-    templateUrl: 'overview.component.html'
+    templateUrl: 'overview.component.html',
+  
 })
 export class OverviewComponent {
     tiles: Tile[] = TILES;
