@@ -52,9 +52,8 @@ import {BlogService} from "./blog/blog.service";
     UsersService,
     AuthService,
     BlogService,
-    AuthGuard
     AuthGuard,
-      NewsService
+    NewsService
   ],
   bootstrap: [AppComponent]
 })
