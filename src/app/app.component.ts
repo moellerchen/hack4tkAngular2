@@ -17,7 +17,7 @@ export class AppComponent {
 
   isAuth() {
     if (!this.authService.isAuthenticated()){
-      this.router.navigate(['/login']);
+      //this.router.navigate(['/login']);
     }
     return this.authService.isAuthenticated();
   }

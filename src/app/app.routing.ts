@@ -10,9 +10,13 @@ import {AuthGuard} from "./auth.guard";
 import {HeaderComponent} from "./directives/header.component";
 import {NewsComponent} from "./news/news.component";
 import {TrafficJamComponent} from "./traffic-jam/traffic-jam.component";
+import {CreateBlogEntryComponent} from "./create-blog-entry/create-blog-entry.component";
+import {BlogComponent} from "./blog/blog.component";
 
 
 const appRoutes: Routes = [
+  { path: 'viewBlogs', component:  BlogComponent },
+  { path: 'createBlog', component:  CreateBlogEntryComponent },
   { path: 'trafficJam', component: TrafficJamComponent },
   { path: '', component: OverviewComponent, pathMatch: 'full'},
   { path: 'login', component: LoginComponent },

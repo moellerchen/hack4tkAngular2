@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" (ngSubmit)="sendBlogEntry()">
+  <input formControlName="headline" type="text" id="headline" class="form-control" placeholder="Überschrift">
+  <span *ngIf="!myForm.controls['headline'].pristine && myForm.controls['headline'].errors != null" class="font">Überschrift eingeben</span>
+  <input formControlName="subheadline" type="text" id="subheadline" class="form-control" placholder="Unterschrift2">
+  <span *ngIf="!myForm.controls['subheadline'].pristine && myForm.controls['subheadline'].errors != null" class="font">2. Überschrift eingeben</span>
+  <textarea formControlName="content" id="content" class="form-control" placholder="Inhalt"></textarea>
+  <span *ngIf="!myForm.controls['content'].pristine && myForm.controls['content'].errors != null" class="font">Text eingeben</span>
+  <button  class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="saveBlogButton">Senden</button>
+</form>

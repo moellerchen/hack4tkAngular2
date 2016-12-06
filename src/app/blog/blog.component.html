@@ -1,0 +1,9 @@
+<div *ngIf="blogs">
+<div *ngFor="let blog of blogs" class="page-header">
+  <h1>{{blog.headline}} <small>{{blog.subheadline}}</small></h1>
+<p>
+  {{blog.content}}
+</p>
+</div>
+</div>
+
