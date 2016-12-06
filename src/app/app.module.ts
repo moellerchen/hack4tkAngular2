@@ -10,6 +10,7 @@ import {UsersService} from "./users/users.service";
 import {AuthService} from "./auth.service";
 import {AuthGuard} from "./auth.guard";
 import { OverviewComponent } from './overview/overview.component';
+import { TrafficJamComponent } from './traffic-jam/traffic-jam.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { TileComponent } from './tiles/tile.component';
 import {TilesModalComponent} from "./tiles/tiles-modal.component";
@@ -19,6 +20,8 @@ import {TilesModalComponent} from "./tiles/tiles-modal.component";
   declarations: [
     AppComponent,
     LoginComponent,
+      OverviewComponent,
+      TrafficJamComponent
       OverviewComponent,
       TilesComponent,
       TileComponent,
