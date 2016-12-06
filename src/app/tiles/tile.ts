@@ -21,15 +21,5 @@ export const TILES: Tile[] = [
         name: "Blog",
         template: 'Hier könnte Ihr Blog stehen!',
         shown: false
-    },
-    {
-        name: "Wetter",
-        template: 'Hier könnte Ihr Wetter stehen!',
-        shown: false
-    },
-    {
-        name: "Weiteres",
-        template: 'Hier könnten weitere Informationen stehen!',
-        shown: false
     }
 ];

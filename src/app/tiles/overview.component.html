@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome!</h1>
+
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#tilesModal" style="position: absolute; margin-top: -48px !important; margin-left: 200px !important;" >
+    Edit Tiles
+  </button>
+
+    <tiles style="display: flex !important; flex-wrap: wrap !important;">
+      <tile [shown]="true" [tileName]="'News #hack4tk'"><news [short]="true" [filter]="'#hack4tk'"></news></tile>
+        <tile [shown]="true" [tileName]="'News #angular2'"><news [short]="true" [filter]="'#angular2'"></news></tile>
+        <tile [shown]="true" [tileName]="'News #theMTeam'"><news [short]="true" [filter]="'#theMTeam'"></news></tile>
+        <tile [shown]="true" [tileName]="'Maps'"><app-traffic-jam></app-traffic-jam></tile>
+        <tile [shown]="true" [tileName]="'Blog'"><app-blog></app-blog></tile>
+
+        <ng-content></ng-content>
+
+    </tiles>
+</div>

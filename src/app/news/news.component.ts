@@ -10,7 +10,7 @@ export class NewsComponent implements OnInit{
     constructor(private newsService: NewsService) {}
 
     @Input() short: boolean = false;
-    @Input() filter: string = '#theMTeam';
+    @Input() filter: string;
     news: News[];
     oneFilter: string;
 
