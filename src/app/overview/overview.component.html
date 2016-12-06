@@ -1,1 +1,11 @@
 <h1>Welcome!</h1>
+<div class="row">
+    <tiles>
+        <div *ngFor="let tile of tiles">
+            <tile [shown]="tile.shown" [tileName]="tile.name">{{tile.template}}</tile>
+        </div>
+        <div>
+            <ng-content></ng-content>
+        </div>
+    </tiles>
+</div>
