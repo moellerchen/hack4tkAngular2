@@ -10,7 +10,7 @@ export class NewsComponent implements OnInit{
     constructor(private newsService: NewsService) {}
 
     @Input() short: boolean = false;
-    @Input() filter: string;
+    @Input() filter: string = "";
     news: News[];
     oneFilter: string;
 
@@ -19,6 +19,10 @@ export class NewsComponent implements OnInit{
     }
 
     getNews() {
-        this.news = this.newsService.getFilteredNews(this.short, this.filter);
+        if(this.filter === "") {
+            this.news = this.newsService.getNews(this.short);
+        } else {
+            this.news = this.newsService.getFilteredNews(this.short, this.filter);
+        }
     }
 }
