@@ -1,11 +1,16 @@
 <div *ngIf="blogs">
-<div *ngFor="let blog of blogs" class="page-header">
-  <blockquote>
-      <footer>{{blog.headline}} <small>{{blog.subheadline}}</small></footer>
+<div *ngFor="let blog of blogs">
+  <div>
+      <h1>{{blog.headline}} <small>{{blog.subheadline}}</small></h1>
       <p>
           {{blog.content}}
       </p>
-  </blockquote>
+      <footer>{{blog.author}} am {{blog.date | date:"dd.MM.yyyy"}}</footer>
+      <comments [comments]="blog.comments"></comments>
+  </div>
 </div>
 </div>
 
+<!--
+class="page-header"
+-->

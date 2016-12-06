@@ -1,0 +1,8 @@
+<a (click)="toggleComments()">Kommentare</a>
+<div *ngIf="showComments">
+    <span *ngIf="!comments">Keine Kommentare zum Laden</span>
+    <div *ngFor="let comment of comments">
+        <p>{{comment.text}}</p>
+        <footer>{{comment.author}} am {{comment.date | date:"dd.MM.yyyy"}}</footer>
+    </div>
+</div>

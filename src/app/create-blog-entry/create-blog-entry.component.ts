@@ -24,7 +24,14 @@ export class CreateBlogEntryComponent implements OnInit {
 
   sendBlogEntry(){
     console.log("send BlogEntry");
-    let blog = new Blog(this.myForm.value.headline, this.myForm.value.subheadline, this.myForm.value.content);
+    let blog = new Blog(
+        this.myForm.value.headline,
+        this.myForm.value.subheadline,
+        this.myForm.value.content,
+        this.myForm.value.author,
+        new Date(),
+        []
+    );
     console.log(blog);
     this.blogService.addBlog(blog);
   }

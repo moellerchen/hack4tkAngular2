@@ -5,5 +5,8 @@
   <span *ngIf="!myForm.controls['subheadline'].pristine && myForm.controls['subheadline'].errors != null" class="font">2. Überschrift eingeben</span>
   <textarea formControlName="content" id="content" class="form-control" placholder="Inhalt"></textarea>
   <span *ngIf="!myForm.controls['content'].pristine && myForm.controls['content'].errors != null" class="font">Text eingeben</span>
-  <button  class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="saveBlogButton">Senden</button>
+    <input formControlName="author" type="text" id="author" class="form-control" placholder="Autor">
+    <span *ngIf="!myForm.controls['author'].pristine && myForm.controls['author'].errors != null" class="font">Bitte Name eingeben</span>
+    <button  class="btn btn-primary" [disabled]="!myForm.valid" type="SUBMIT" id="saveBlogButton">Senden</button>
+
 </form>

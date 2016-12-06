@@ -2,18 +2,35 @@ import {Injectable} from '@angular/core';
 import {Http, Response, Headers} from "@angular/http";
 import 'rxjs/Rx';
 import {Blog} from "./blog.class";
+import {Comment} from './comments';
 
 @Injectable()
 export class BlogService {
-  private blogs: Blog[] = [
-    new Blog('Angular 2 ist besser', 'man kann es leicher verstehen', 'loremnaglkdfglkdfnlkldfglkdfg'),
-    new Blog('Angular 3 ist besser', 'man kann es noch leicher verstehen', 'loremnaglkdfglkdfnlkldfglkdfg')
-  ]
+
+    private comments: Comment[] = [
+        {
+            author: 'Catharina',
+            date: new Date(),
+            text: 'Schöner Beitrag!'
+        },
+        {
+            author: 'Jenny',
+            date: new Date(),
+            text: 'Hat mir sehr gefallen!'
+        }
+    ]
+    private blogs: Blog[] = [
+    new Blog('Angular 2 ist besser', 'man kann es leicher verstehen', 'loremnaglkdfglkdfnlkldfglkdfg', 'Niklas', new Date(), this.comments),
+    new Blog('Angular 3 ist besser', 'man kann es noch leicher verstehen', 'loremnaglkdfglkdfnlkldfglkdfg', 'Niklas', new Date(), this.comments)
+  ];
 
   constructor(private http: Http) {
     this.fetchData().subscribe(
       (data: Blog[]) => {
-        this.blogs = data;
+        if(data == null) {
+            //this.blogs = data;
+            return;
+        }
       }
     );
   }

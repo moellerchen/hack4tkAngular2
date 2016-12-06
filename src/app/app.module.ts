@@ -23,6 +23,7 @@ import {BlogComponent} from './blog/blog.component';
 import {CreateBlogEntryComponent} from './create-blog-entry/create-blog-entry.component';
 import {BlogService} from "./blog/blog.service";
 import {ProfileComponent} from "./profile/profile.component";
+import {CommentsComponent} from "./blog/comments.component";
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import {ProfileComponent} from "./profile/profile.component";
     FooterComponent,
     NewsComponent,
     ToHtmlPipe,
-    ProfileComponent
+    ProfileComponent,
+      CommentsComponent
   ],
   imports: [
     BrowserModule,
