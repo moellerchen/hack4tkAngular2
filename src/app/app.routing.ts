@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login.component';
 import { OverviewComponent } from './tiles/overview.component';
 import {AuthGuard} from "./auth.guard";
+import {HeaderComponent} from "./directives/header.component";
 import {NewsComponent} from "./news/news.component";
 import {TrafficJamComponent} from "./traffic-jam/traffic-jam.component";
 

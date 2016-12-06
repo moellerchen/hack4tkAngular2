@@ -9,6 +9,8 @@ import { routing }  from './app.routing';
 import {UsersService} from "./users/users.service";
 import {AuthService} from "./auth.service";
 import {AuthGuard} from "./auth.guard";
+import {HeaderComponent} from "./directives/header.component";
+import {FooterComponent} from "./directives/footer.component";
 import { TrafficJamComponent } from './traffic-jam/traffic-jam.component';
 import { OverviewComponent } from './tiles/overview.component';
 import { TilesComponent } from './tiles/tiles.component';
@@ -23,7 +25,9 @@ import {NewsService} from "./news/news.service";
   declarations: [
     AppComponent,
     LoginComponent,
-      OverviewComponent,
+    OverviewComponent,
+    HeaderComponent,
+    FooterComponent,
       TrafficJamComponent,
       OverviewComponent,
       TilesComponent,
